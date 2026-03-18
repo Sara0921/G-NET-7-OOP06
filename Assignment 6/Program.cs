@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Net.NetworkInformation;
 using System.Numerics;
 using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
@@ -31,6 +33,21 @@ namespace Assignment_6
     //Label()>>concrete>>The format "Brand - XW" is the same for all appliances.t reuses the other methods internally.
     //C) what will it return? >> Standby
     //Because Toaster does not override Status(), so it falls back to the parent's virtual implementation which returns "Standby".
+    #endregion
+    #region Question04
+    //A)Partial Class >> A partial class splits one class across multiple files using the partial keyword — at compile time, they're merged into one single class.
+    // Organize large classes , Team collaboration , Enable code generation , Protect manual code
+    //B) partial method is declared in one part of a partial class and optionally implemented in another part.
+    //Yes, it still compiles.
+    //Because If a partial method has no implementation, the compiler silently removes all calls to it as if they never existed. No error, no crash.
+    //C)Extension Methods >> An extension method lets you add new methods to an existing type without modifying its source code, without inheritance, and without recompiling.
+    //Three rules:
+    //1.Must be in a static class
+    //2.The method itself must be static
+    //3.First parameter must use this followed by the type being extended
+    //D)$20.00 
+
+
     #endregion
     internal class Program
     {
