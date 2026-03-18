@@ -24,6 +24,13 @@ namespace Assignment_6
     //Inheritance |A class can extend only one                    |A class can implement multiple
     //Constructor |✅ Can have a constructor                      |❌ Cannot
     #endregion
+    #region Question03
+    //A) No. Appliance is an abstract class — you cannot instantiate it directly.
+    //B)PowerConsumption()>>abstract>>Every appliance consumes different power — there's no sensible default. Each subclass must provide its own value.
+    //Status()>>virtual>>Most appliances start on "Standby" — a reasonable default. But subclasses can override it if needed.
+    //Label()>>concrete>>The format "Brand - XW" is the same for all appliances.t reuses the other methods internally.
+    //C) what will it return? >> Standby
+    //Because Toaster does not override Status(), so it falls back to the parent's virtual implementation which returns "Standby".
     #endregion
     internal class Program
     {
