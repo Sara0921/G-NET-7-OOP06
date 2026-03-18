@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Numerics;
 using System.Reflection.PortableExecutable;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -14,6 +15,14 @@ namespace Assignment_6
     //Abstraction:
     //Encapsulation:
     //The water tank level, internal temperature, and bean count are stored privately inside the machine.You can't directly change them — you interact only through buttons, and the machine controls its own state.
+    #endregion
+    #region Question02
+    //4 Key Differences
+    //                    Abstract Class                          | Interface
+    //Methods     | Can have both complete and incomplete methods | All methods are incomplete(no body)
+    //Variables   | Can have instance variables                   |Only constants(final static)
+    //Inheritance |A class can extend only one                    |A class can implement multiple
+    //Constructor |✅ Can have a constructor                      |❌ Cannot
     #endregion
     #endregion
     internal class Program
